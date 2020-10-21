@@ -18,4 +18,4 @@ function outside(){
 	//	console.log(d);
 }
 outside();	
-
+console.log("Poll SCM git sucessfull on jenkins");
