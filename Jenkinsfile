@@ -7,7 +7,7 @@ pipeline{
 				echo "Build Stage"	
 			}
 			
-			script {
+			steps {
 				TAG = VersionNumber(versionNumberString: '${BUILD_DATE_FORMATTED, "yyyyMMdd"}-develop-${BUILDS_TODAY}')
 			}
 		}
