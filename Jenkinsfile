@@ -6,9 +6,9 @@ pipeline{
 				sh "node --version"
 				echo "Build Stage"
 					
-			}
+				}
 			}
 		}
 
 	}
-}
+
