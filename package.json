@@ -1,0 +1,22 @@
+{
+  "name": "test-npm",
+  "version": "1.0.0",
+  "description": "Desc",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neolokeshkr/JS.git"
+  },
+  "keywords": [
+    "jenkins"
+  ],
+  "author": "Loki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neolokeshkr/JS/issues"
+  },
+  "homepage": "https://github.com/Neolokeshkr/JS#readme"
+}

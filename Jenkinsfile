@@ -5,7 +5,7 @@ pipeline{
 			steps {
 				sh "node --version"
 				echo "Build Stage"
-				sh "npm init"
+				
 				sh "ls"
 				script
 				{
