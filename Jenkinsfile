@@ -7,8 +7,9 @@ pipeline{
 				echo "Build Stage"
 				script
 				{
-				tag = VersionNumber (versionNumberString: '${BUILD_DAY,XX}-develop')
+					tag = VersionNumber (versionNumberString: '${BUILD_DAY,XX}-develop')
 				}
+				sh "tar JS.tar.gz ./*"
 	
 				}
 			}
