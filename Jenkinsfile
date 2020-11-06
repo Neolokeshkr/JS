@@ -15,7 +15,7 @@ pipeline{
 		}
 		stage('Tagging'){
 			steps{
-	
+				echo "Tagging"
 			}
 		}
 	
