@@ -5,7 +5,7 @@ pipeline{
 			steps {
 				sh "node --version"
 				echo "Build Stage"
-				tag = VersionNumber (versionNumberString: '${BUILD_DAY}-develop-${BUILDS_TODAY}')
+				tag = VersionNumber (versionNumberString: '${BUILD_DAY}-develop')
 
 	
 				}
