@@ -9,7 +9,7 @@ pipeline{
 				{
 					tag = VersionNumber projectStartDate: '2020-11-06', versionNumberString: '1.0.0-${BUILDS_ALL_TIME}', versionPrefix: 'V'
 				}
-				sh "tar -pczf JS.tar.gz /var/lib/jenkins/workspace/pipeline-example"
+				sh "tar -pczf JS.tar.gz /home/lokesh/Development/JS"
 				sh "pwd"	
 			}
 		}
