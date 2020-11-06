@@ -11,13 +11,14 @@ pipeline{
 				}
 				sh "tar -pczf JS.tar.gz ./*"
 				}
-			}
 		}
+		
 		stage('Tagging'){
 			steps{
 				echo "Tagging"
 			}
 		}
+	}
 	
 	post{
 		success{
