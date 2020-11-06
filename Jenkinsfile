@@ -14,7 +14,12 @@ pipeline{
 				}
 			}
 		}
-
+	post{
+		success{
+			echo "Post Stage"
+			archiveArtifacts artifacts: 'JS.tar.gz', onlyIfSuccessful:true
+		}
 	}
+}	
 
 
