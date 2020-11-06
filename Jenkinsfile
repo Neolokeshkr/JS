@@ -5,6 +5,8 @@ pipeline{
 			steps {
 				sh "node --version"
 				echo "Build Stage"
+				sh "npm init"
+				sh "ls"
 				script
 				{
 					tag = VersionNumber projectStartDate: '2020-11-06', versionNumberString: '1.0.0-${BUILDS_ALL_TIME}', versionPrefix: 'V'
