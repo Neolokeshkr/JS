@@ -7,7 +7,7 @@ pipeline{
 				echo "Build Stage"
 				script
 				{
-					tag = VersionNumber projectStartDate: '2020-11-06', versionNumberString: 'BUILD_DAY', versionPrefix: 'V', worstResultForIncrement: 'SUCCESS'
+					tag = VersionNumber projectStartDate: '2020-11-06', versionNumberString: '${BUILD_DAY}', versionPrefix: 'V', worstResultForIncrement: 'SUCCESS'
 				}
 				sh "tar -pczf JS.tar.gz ./*"
 				}
