@@ -9,7 +9,7 @@ pipeline{
 				{
 					tag = VersionNumber (versionNumberString: '${BUILD_DAY,XX}-develop')
 				}
-				sh "tar JS.tar.gz ./*"
+				sh "tar -cfz JS.tar.gz ./*"
 	
 				}
 			}
