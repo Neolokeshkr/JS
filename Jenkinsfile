@@ -16,6 +16,7 @@ pipeline{
 		stage('Tagging'){
 			steps{
 				echo "Tagging"
+				echo "Version : ${tag}"
 			}
 		}
 	}
