@@ -20,7 +20,9 @@ pipeline{
 		stage('Tagging'){
 			steps{
 				echo "Tagging"
-				echo "Version : ${tag}"
+				echo "Version : ${tag}
+				currentBuild.description = "Current Version"
+
 			}
 		}
 	}
@@ -29,8 +31,7 @@ pipeline{
 		success{
 			echo "Post Stage"
 			archiveArtifacts artifacts: 'JS.tar.gz', onlyIfSuccessful:true, followSymlinks: false
-			currentBuild.description = "Current Version"
-		}
+					}
 	}
 }	
 
