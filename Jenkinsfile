@@ -31,7 +31,7 @@ pipeline{
 	post{
 		success{
 			echo "Post Stage"
-			archiveArtifacts artifacts: 'JS-*.tar.gz', onlyIfSuccessful:true, followSymlinks: false
+			archiveArtifacts artifacts: 'JS-'${tag}'.tar.gz', onlyIfSuccessful:true, followSymlinks: false
 					}
 	}
 }	
