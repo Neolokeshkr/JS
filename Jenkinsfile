@@ -21,8 +21,9 @@ pipeline{
 			steps{
 				echo "Tagging"
 				echo "Version : ${tag}"
-				currentBuild.description = "Current Version"
-
+				script{
+					currentBuild.description = "Current Version"
+				}
 			}
 		}
 	}
