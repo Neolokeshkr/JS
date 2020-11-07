@@ -22,7 +22,7 @@ pipeline{
 				echo "Tagging"
 				echo "Version : ${tag}"
 				script{
-					currentBuild.description = ${tag} 
+					currentBuild.description = tag 
 				}
 			}
 		}
