@@ -28,7 +28,8 @@ pipeline{
 	post{
 		success{
 			echo "Post Stage"
-			archiveArtifacts artifacts: '${tag}.tar.gz', onlyIfSuccessful:true, followSymlinks: false
+			archiveArtifacts artifacts: 'JS.tar.gz', onlyIfSuccessful:true, followSymlinks: false
+			currentBuild.description = "Current Version"
 		}
 	}
 }	
