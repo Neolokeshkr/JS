@@ -20,7 +20,7 @@ pipeline{
 		stage('Tagging'){
 			steps{
 				echo "Tagging"
-				echo "Version : ${tag}
+				echo "Version : ${tag}"
 				currentBuild.description = "Current Version"
 
 			}
