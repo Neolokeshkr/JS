@@ -1,8 +1,8 @@
 // promise
-    1. Promise is created using new keyword
-    2. It takes an anonymous function haiving (resolve, reject) as an argument
-    3. when a promise is called it either gets resolved or rejected.
-    4. Promsies were made to replace the callbacks 
+    // 1. Promise is created using new keyword
+    // 2. It takes an anonymous function haiving (resolve, reject) as an argument
+    // 3. when a promise is called it either gets resolved or rejected.
+    // 4. Promsies were made to replace the callbacks 
 
 // Examples
     let p = new Promise((resolve, reject) => {
