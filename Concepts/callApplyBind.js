@@ -1,16 +1,16 @@
-// let object = {
-//     firstName : "Lokesh",
-//     lastName : "Kumar"
-// }
+let object = {
+    firstName : "Lokesh",
+    lastName : "Kumar"
+}
 
-// function printFullName(city,state){
-//     console.log(this.firstName+" "+this.lastName+" from "+city+" "+state);
-// }
+function printFullName(city,state){
+    console.log(this.firstName+" "+this.lastName+" from "+city+" "+state);
+}
 
 // // call - concept of function borrowing
 //     // To call any function on any said object.
-//     printFullName.call(object);
-//     printFullName.call(object,"Delhi","India");
+    // printFullName.call(object);
+    // printFullName.call(object,"Delhi","India");
 
 // // apply - concept of function borrowing
 //     // function parameters are passed in as Array list
@@ -41,13 +41,13 @@
         profession: "Engineer"
     }
 
-    console.log(Introduction.call(obj, "Delhi"));
+    // console.log('Call: ' +Introduction.call(obj, "Delhi"));
 
     // apply()
-    console.log(Introduction.apply(obj, Array("Delhi")));
+    // console.log('Apply: ' +Introduction.apply(obj, Array("Delhi")));
 
     // bind
     let newBindFunc = Introduction.bind(obj);
-    console.log(typeof(newBindFunc));
-    console.log((newBindFunc('Jalandhar')));
+    // console.log(typeof(newBindFunc));
+    // console.log('Bind: ' +(newBindFunc('Jalandhar')));
     
