@@ -7,9 +7,22 @@
     function init(){
         let name = "Lokesh";
         function displayName(){ // inner function that forms the closure
-            console.log(name); // naem variable is declared in outer function
+            console.log(name); // name variable is declared in outer function
         }
         displayName();
     }
 
     init();
+
+    function outerFunction(){
+        let outerVariable = 10;
+
+        function innerFunction(){
+            console.log(outerVariable)
+        }
+
+        return innerFunction
+    }
+
+    let closureFunction = outerFunction()
+    closureFunction();

@@ -1,6 +1,6 @@
 // currying  
 //     1. transforms a function having mutiple arguments into a sequence of nesting functions.
-//     2. The nexted functions take only one arguement at a time.
+//     2. The nested functions take only one arguement at a time.
 //     3. Currying helps you avoid passing the same variable again and again.
 //     4. It helps to create a higher order function.
 
