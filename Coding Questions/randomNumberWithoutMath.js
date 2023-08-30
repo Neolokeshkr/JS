@@ -8,3 +8,6 @@ function printRandomNumer(min, max){
 }
 
  console.log(printRandomNumer(1,89));
+
+//  Using Random Number
+console.log(Math.floor(Math.random() * (6 - 1) + 1))``;
