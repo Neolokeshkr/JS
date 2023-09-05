@@ -11,4 +11,14 @@ class Person {
 
 const person = new Person('Lokesh');
 
-console.log(person.introduction());
+console.log(person.introduction());\
+
+class Professor extends Person{
+    
+    constructor(name, teaches){
+        super(name)
+        this.teaches = teaches
+    }
+
+    
+}
