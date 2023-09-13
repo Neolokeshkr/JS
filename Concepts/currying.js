@@ -22,3 +22,37 @@
     }
     console.log(curriedMultiply(4)(5));
     console.log(curriedMultiply(4));
+
+
+
+    let a=[1,2,3,4,5,6,7,8,9,10]
+
+//output : [1,2,3],[4,5,6],[7,8,9],[10]
+
+function splitArray(array){
+	let newArray = []
+  
+	 for(i=0; i<array.length; i=i+3){
+   let subArray = []
+   	for(k=i; k<i+3 && i<array.length; k++){
+    	subArray.push(array[k])
+    }
+    newArray.push(subArray)
+   }
+   return newArray;
+}
+
+console.log(splitArray(a))
+
+// Curried Sum witb number of elements
+function curriedSum(n) {
+    if (n === 0) {
+      return 0; // Base case: when no more numbers are left to sum
+    } else {
+      // Return a function that takes the next number and continues the sum
+      return function(nextNumber) {
+        return curriedSum(n - 1) + nextNumber;
+      };
+    }
+  }
+  

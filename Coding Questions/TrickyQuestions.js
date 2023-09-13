@@ -15,6 +15,17 @@
         var sayHi = function () {
           console.log("Hi");
         };
+
+    // 
+        let a;
+        console.log(a)      //Gives Reference Error: a is not defined
+
+        var b;
+        console.log(b)      //returns undefined
         
 // Prototypical Inheritence
     // When you try to access a property or method on an object, JavaScript first looks for the property or method in the object itself. If it doesn't find it there, it goes up the prototype chain and looks in the prototype object. This process continues until it finds the property or reaches the end of the prototype chain (when the [[Prototype]] is null).
+
+
+// typeof
+        console.log(typeof typeof(1))   // It will always return "string"

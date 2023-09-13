@@ -10,4 +10,6 @@ rl.question('Enter Data: ', (inputs) => {
     rl.close();
 })
 
-// rl.on('line', (line) => {  s_input += line;});
+rl.on('line', (line) => {  s_input += line;});
+
+rl.on('close', () => {})
