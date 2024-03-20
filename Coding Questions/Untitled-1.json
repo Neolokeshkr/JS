@@ -1,0 +1,33 @@
+{
+  fruit: [
+    {
+  name: "bananas",
+  quantity: 0,
+  type: "fruit"
+    },
+    {
+  name: "cherries",
+  quantity: 5,
+  type: "fruit"
+    }
+  ],
+  meat: [
+    {
+  name: "goat",
+  quantity: 23,
+  type: "meat"
+    },
+    {
+  name: "fish",
+  quantity: 22,
+  type: "meat"
+    }
+  ],
+  vegetables: [
+    {
+  name: "asparagus",
+  quantity: 5,
+  type: "vegetables"
+    }
+  ]
+}

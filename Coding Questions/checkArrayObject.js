@@ -10,4 +10,4 @@ function checkArray(inputObject){
 
 console.log(checkArray([1,2,3]))
 
-console.log(Object.prototype.toString.call([1,2]));
+console.log(Object.prototype.toString.call(NaN));

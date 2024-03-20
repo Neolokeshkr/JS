@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Debouncing</title>
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const btn = document.getElementById('debounceButton');
+            
+
+            function debounce(functionToBeDebounced, delay) {
+                let timeoutId
+
+                return function () {
+                    const context = this;
+                    const args = arguments
+
+                    clearTimeout(timeoutId);
+
+                    timeoutId = setTimeout(() => {
+                        functionToBeDebounced.apply(context, args)
+                    }, delay)
+                }
+            }
+
+            function fireAPI() {
+                console.log('API Fired!')
+            }
+
+            // const debouncedHandleInput = debounce(fireAPI, 300);
+
+            btn.addEventListener('click', debounce(fireAPI, 3000))
+
+
+        })
+
+    </script>
+
+    <p>
+        1. Debouncing is a technique used in web dev to delay the execution of a function until a certain time has
+        elapsed since the last time the function was invoked.
+    </p>
+
+    <button id="debounceButton">
+        Debounce
+    </button>
+</body>
+
+</html>
+
+<!-- 
+    1. 1. Debouncing is a technique used in web dev to delay the execution of a function until a certain time has elapsed since
+the last time the function was invoked.
+
+ -->
