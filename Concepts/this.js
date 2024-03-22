@@ -1,0 +1,1 @@
+// The this keyword refers to the current object the code is being written inside

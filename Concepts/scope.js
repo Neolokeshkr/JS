@@ -11,9 +11,7 @@
 
 // Code
 console.log(x)
-const x = 2;
-
-// Return Value - undefined
+const x = 2;      // Return Value - undefined
 
 // Explanation:
 /* 
